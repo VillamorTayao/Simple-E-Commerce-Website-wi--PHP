@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <title> Drip and Brew's Coffee Shop </title>
+        <link rel="shortcut icon" href="./images/2.jpg">
+        <link href="./css/style-contacts.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: rgb(22, 22, 22); margin: 0; align-items: center;">
+        <header class = "header">
+            <div class = "header-logo-pic">
+                <a href = "index.html"><img src="images/2.jpg" class="logo-pic"></a>
+            </div>
+
+            <div class = "header-buttons">
+                <div class="header-home-btn">
+                    <a href="index.html"><button class="home-products-about-contact-btn">
+                        Home
+                    </button></a>
+                </div>
+                <div class="products">
+                    <a href="products.html"><button class="home-products-about-contact-btn">
+                        Products
+                    </button></a>
+                </div>
+                <div class="about">
+                    <a href="index.html"><button class="home-products-about-contact-btn">
+                        About
+                    </button></a>
+                </div>
+                <div class="contact">
+                    <a href="contacts.html"><button class="home-products-about-contact-btn">
+                        Contacts
+                    </button></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/dripandbrew.ph"><button class="fb-btn">
+                        Visit our Facebook Page
+                    </button></a>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section class="google">
+                <div class="google-map">
+                    <span>You may visit our Location!</span>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.4182815574427!2d121.02202051415333!3d14.688922078845781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b18eca761a43%3A0xe1dec56e75fff543!2sDrip%20%26%20Brew%20Coffee%20Shop!5e0!3m2!1sen!2sph!4v1670394702626!5m2!1sen!2sph" 
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+            </section>
+            <form action="send.php" method="post">
+                <label class="customer-service">Customer Service</label>
+                <label>Please enter email</label>
+                <input type="text" placeholder="eg. delacruz@gmail.com" class="email-container" name="name">
+                <label>Please enter what's on your mind</label>
+                <textarea placeholder="eg. requests, complaints, follow-up and etc." class="complaint-box" name="message"></textarea>
+                <input type="submit" class="submit-btn" name="button">
+            </form>
+        </main>
+    </body>
+</html>

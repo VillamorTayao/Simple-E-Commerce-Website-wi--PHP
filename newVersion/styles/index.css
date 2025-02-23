@@ -1,0 +1,160 @@
+:root{ 
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    position: relative;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+}
+
+header{
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: thin;
+    border-color: rgb(150, 121, 105);
+    z-index: 100;
+
+    position: fixed;
+    z-index: 100;
+}
+
+header .positioning{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    object-fit: contain;
+    width: 80%;
+}
+
+header .positioning img{
+    height: 80px;
+    width: 100%;
+    max-width: 100%;
+}
+
+header .positioning .redirect-buttons{
+    max-width: 100%;
+}
+
+header .positioning .redirect-buttons ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header .positioning .redirect-buttons ul li{
+    list-style-type: none;
+    padding-right: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* MAIN STYLE STARTS HERE */
+
+main{
+    padding-top: 130px;
+}
+
+main .company-background-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+}
+
+main .company-background-image img{
+    width: 80%;
+    height: 750px;
+}
+
+main .company-background-image .redirect-icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 52%;
+    left: 62.2%;
+    z-index: 50;
+    box-sizing: border-box;
+}
+
+main .company-background-image .redirect-icon img{
+    height: 60px;
+    margin-right: 12px;
+    transition: scale 0.2s;
+}
+
+main .company-background-image .redirect-icon img:hover{
+    scale: 1.3;
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT SECTION */
+
+main .about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    margin-top: 100px;
+}
+
+main .about-section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+main .about-section .about-section-image{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+main .about-section .about-section-image img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+main .about-section .about-section-info{
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

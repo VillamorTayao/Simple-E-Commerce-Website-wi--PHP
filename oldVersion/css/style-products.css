@@ -1,0 +1,579 @@
+a{text-decoration: none;}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    height: 120px;
+    border-bottom: solid #dedede 1px;
+}
+
+.header-logo-pic{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 80px;
+    width: 100px;
+}
+.logo-pic{
+    height: 100%;
+    width: 100%;
+    animation: logo-pic-animation 1s ease-in;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+@keyframes logo-pic-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.home-products-about-contact-btn{
+    background-color: black;
+    color: rgb(110, 110, 110);
+    margin-right: 10px;
+    transition: color 0.5s, text-decoration 0.5s, background-color 0.5s;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 10px;
+    font-weight: 700;
+    border: none;
+    animation: home-products-about-contact-btn-animation 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    transform: scale(0);
+}
+@keyframes home-products-about-contact-btn-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.home-products-about-contact-btn:hover{
+    background-color: rgb(180, 124, 72);
+    color: white;
+}
+
+
+
+
+
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+main span{
+    font-family: Rochester;
+    text-align: center;
+    font-size: 52px;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+main .span2{
+    font-family: Rochester;
+    text-align: center;
+    font-size: 52px;
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+main .span3{
+    font-family: Rochester;
+    text-align: center;
+    font-size: 52px;
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.top-products{
+    height: 100%;
+    margin: auto 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    padding: 30px 30px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.products{
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    animation: products-animation 0.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    transform: scale(0);
+    opacity: 0;
+}
+@keyframes products-animation{
+    10%{
+        opacity: 0.1;
+        transform: scale(0.1);
+    }
+    20%{
+        opacity: 0.2;
+        transform: scale(0.2);
+    }
+    30%{
+        opacity: 0.3;
+        transform: scale(0.3);
+    }
+    40%{
+        opacity: 0.4;
+        transform: scale(0.4);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    60%{
+        opacity: 0.6;
+        transform: scale(0.6);
+    }
+    70%{
+        opacity: 0.7;
+        transform: scale(0.7);
+    }
+    80%{
+        opacity: 0.8;
+        transform: scale(0.8);
+    }
+    90%{
+        opacity: 0.9;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.products img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.products .products-info{
+    font-family: Special Elite;
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+.torani-syrup-series{
+    height: 700px;
+    width: 80%;
+    margin: 1% 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+}
+.torani-sauce{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.torani-sauce img{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    animation: torani-sauce-pic-animation 0.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    transform: translateX(-40%);
+    opacity: 0;
+}
+@keyframes torani-sauce-pic-animation{
+    10%{
+        opacity: 0.1;
+        transform: translateX(-36%);
+    }
+    20%{
+        opacity: 0.2;
+        transform: translateX(-32%);
+    }
+    30%{
+        opacity: 0.3;
+        transform: translateX(-28%);
+    }
+    40%{
+        opacity: 0.4;
+        transform: translateX(-24%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-20%);
+    }
+    60%{
+        opacity: 0.6;
+        transform: translateX(-16%);
+    }
+    70%{
+        opacity: 0.7;
+        transform: translateX(-12%);
+    }
+    80%{
+        opacity: 0.8;
+        transform: translateX(-8%);
+    }
+    90%{
+        opacity: 0.9;
+        transform: translateX(-4%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.torani-sauce-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+    animation: torani-sauce-content-animation 0.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    transform: translateX(30%);
+    opacity: 0;
+}
+@keyframes torani-sauce-content-animation{
+    10%{
+        opacity: 0.1;
+        transform: translateX(27%);
+    }
+    20%{
+        opacity: 0.2;
+        transform: translateX(24%);
+    }
+    30%{
+        opacity: 0.3;
+        transform: translateX(21%);
+    }
+    40%{
+        opacity: 0.4;
+        transform: translateX(18%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(15%);
+    }
+    60%{
+        opacity: 0.6;
+        transform: translateX(12%);
+    }
+    70%{
+        opacity: 0.7;
+        transform: translateX(9%);
+    }
+    80%{
+        opacity: 0.8;
+        transform: translateX(6%);
+    }
+    90%{
+        opacity: 0.9;
+        transform: translateX(3%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.torani-sauce-content span{
+    font-size: 40px;
+    font-family: Rubik Vinyl;
+}
+.classes1 p{
+    text-align: center;
+    font-family: Special Elite;
+    font-size: 18px;
+}
+
+
+
+
+
+
+.name{
+    font-size: 32px;
+    font-family: Rubik Vinyl;
+}
+
+
+
+
+
+
+
+.torani-syrup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.torani-syrup img{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    animation: torani-syrup-pic-animation 0.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    transform: translateX(30%);
+    opacity: 0;
+}
+@keyframes torani-syrup-pic-animation{
+    10%{
+        opacity: 0.1;
+        transform: translateX(27%);
+    }
+    20%{
+        opacity: 0.2;
+        transform: translateX(24%);
+    }
+    30%{
+        opacity: 0.3;
+        transform: translateX(21%);
+    }
+    40%{
+        opacity: 0.4;
+        transform: translateX(18%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(15%);
+    }
+    60%{
+        opacity: 0.6;
+        transform: translateX(12%);
+    }
+    70%{
+        opacity: 0.7;
+        transform: translateX(9%);
+    }
+    80%{
+        opacity: 0.8;
+        transform: translateX(6%);
+    }
+    90%{
+        opacity: 0.9;
+        transform: translateX(3%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.torani-syrup-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    animation: torani-syrup-content-animation 0.8s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    transform: translateX(-40%);
+    opacity: 0;
+}
+@keyframes torani-syrup-content-animation{
+    10%{
+        opacity: 0.1;
+        transform: translateX(-36%);
+    }
+    20%{
+        opacity: 0.2;
+        transform: translateX(-32%);
+    }
+    30%{
+        opacity: 0.3;
+        transform: translateX(-28%);
+    }
+    40%{
+        opacity: 0.4;
+        transform: translateX(-24%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-20%);
+    }
+    60%{
+        opacity: 0.6;
+        transform: translateX(-16%);
+    }
+    70%{
+        opacity: 0.7;
+        transform: translateX(-12%);
+    }
+    80%{
+        opacity: 0.8;
+        transform: translateX(-8%);
+    }
+    90%{
+        opacity: 0.9;
+        transform: translateX(-4%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.torani-syrup-content span{
+    font-size: 40px;
+    font-family: Rubik Vinyl;
+}
+.classes2 p{
+    text-align: center;
+    font-family: Special Elite;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.others{
+    margin: auto 10%;
+    width: 80%;
+    height: 550px;
+    margin-bottom: 100px;
+}
+.other-coffee{
+    width: 100%;
+    height: 100%;
+}
+.other-coffee img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    animation: other-coffee-pic-animation 1.2s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    transform: rotate(360deg);
+    transform: scale(0);
+    opacity: 0;
+}
+@keyframes other-coffee-pic-animation {
+    10%{
+        opacity: 0.1;
+        transform: scale(0.1);
+        transform: rotate(320deg);
+    }
+    20%{
+        opacity: 0.2;
+        transform: scale(0.1);
+        transform: rotate(290deg);
+    }
+    30%{
+        opacity: 0.3;
+        transform: scale(0.2);
+        transform: rotate(250deg);
+    }
+    40%{
+        opacity: 0.4;
+        transform: scale(0.3);
+        transform: rotate(220deg);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(0.4);
+        transform: rotate(180deg);
+    }
+    60%{
+        opacity: 0.6;
+        transform: scale(0.5);
+        transform: rotate(150deg);
+    }
+    70%{
+        opacity: 0.1;
+        transform: scale(0.6);
+        transform: rotate(120deg);
+    }
+    10%{
+        opacity: 0.7;
+        transform: scale(0.7);
+        transform: rotate(70deg);
+    }
+    80%{
+        opacity: 0.8;
+        transform: scale(0.8);
+        transform: rotate(45deg);
+    }
+    90%{
+        opacity: 0.9;
+        transform: scale(0.9);
+        transform: rotate(30deg);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+}

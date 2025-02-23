@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <title>Drip & Brew Coffee Shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="contact.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="image/2.jpg">
+    <link href="./css/style-index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    </head>
+    <body style="background-color: rgb(22, 22, 22); margin: 0; align-items: center;">
+        <!-- START HEADING SECTION --> 
+        <div class="heading">
+            <div class="header">
+                <div class="header-logo-pic">
+                    <a href="website.html">
+                        <img class="logo-pic" src="image/logo.jpg">
+                        <h1 class="name">Drip & Brew Coffee Shop</h1>
+                    </a>
+                </div>
+                
+                <div class="header-buttons">
+                    <div class="header-home-button">
+                        <a href="website.html">
+                            <button class="home-products-about-contacts-btn">
+                                Home
+                            </button>
+                        </a>
+                    </div>
+                    <div class="products-button">
+                        <a href="products.html">
+                            <button class="home-products-about-contacts-btn">
+                                Product
+                            </button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                        </a>
+                    </div>
+                    <div class="about-button">
+                        <a href="about.html">
+                            <button class="home-products-about-contacts-btn">
+                                About
+                            </button>
+                        </a>
+                    </div>
+                    <div class="contact-button">
+                        <a href="contact.html">
+                            <button class="home-products-about-contacts-btn">
+                                Contact
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="google">
+                <div class="google-map">
+                    <span>You may visit our Location!</span>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.4182815574427!2d121.02202051415333!3d14.688922078845781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b18eca761a43%3A0xe1dec56e75fff543!2sDrip%20%26%20Brew%20Coffee%20Shop!5e0!3m2!1sen!2sph!4v1670394702626!5m2!1sen!2sph" 
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+            </section>
+            <form action="send.php" method="POST" class="contact-form">
+                <span class="customer-service">Customer Service</span>
+                <label>Please enter email</label>
+                <input type="text" placeholder="eg. delacruz@gmail.com" class="email-container" name="name">
+                <label>Please enter what's on your mind</label>
+                <textarea placeholder="eg. requests, complaints, follow-up and etc." class="complaint-box" name="message"></textarea>
+                <input type="submit" class="submit-btn" name="button">
+            </form>
+        </main>
+    </body>
+</html>

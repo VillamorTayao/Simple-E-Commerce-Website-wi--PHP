@@ -1,0 +1,431 @@
+a{text-decoration: none;}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    height: 120px;
+    border-bottom: solid #dedede 1px;
+    animation: header-load 1s ease-in;
+}
+@keyframes header-load{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0.3;
+    }
+    50%{
+        opacity:0.5
+    }
+    100%{
+        opacity: 0.7;
+        transform: translateY(0);
+    }
+}
+
+.header-logo-pic{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 80px;
+    width: 100px;
+}
+.logo-pic{
+    height: 100%;
+    width: 100%;
+    animation: logo-pic-animation 1s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+@keyframes logo-pic-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.home-products-about-contact-btn{
+    background-color: black;
+    color: rgb(110, 110, 110);
+    margin-right: 10px;
+    transition: color 0.5s, text-decoration 0.5s, background-color 0.5s;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 10px;
+    font-weight: 700;
+    border: none;
+    animation: home-products-about-contact-btn-animation 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transform: scale(0);
+}
+@keyframes home-products-about-contact-btn-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
+
+.home-products-about-contact-btn:hover{
+    background-color: rgb(180, 124, 72);
+    color: white;
+}
+.fb-btn{
+    font-style: Klavika;
+    font-weight: 850;
+    background-color: black;
+    color: rgb(110, 110, 110);
+    padding: 10px 10px;
+    margin-right: 10px;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+    border: none;
+    animation: fb-btn-animation 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transform: scale(0);
+}
+.fb-btn:hover{
+    color: white;
+    background-color: #385898;
+    margin-right: 10px;
+}
+@keyframes fb-btn-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Picture Logo Setting */
+.full-scale-logo{
+    display: flex;
+    height: 500px;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+@keyframes full-scale-logo-animation {
+    0%{
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    50%{
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+.full-scale-logo-pic{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    color: whitesmoke;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+.store-name{
+    font-size: 38px;
+    font-family: Rochester;
+}
+hr{
+    display: inline-block;
+    width: 13%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first-section-preview{
+    display: flex;
+    justify-content: space-between;
+    /*background-color: rgb(65, 44, 25);*/
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 130px;
+    margin-bottom: 100px;
+    height: 373px;
+    width: 83%;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+.preview1{
+    width: 300px;
+    height: 100%;
+}
+.preview1-pic-setting{
+    border-radius: 20px;
+    height: 100%;
+    width: 300px;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+.information1-title{
+    font-family: Rubik Vinyl;
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 32px;
+    color: whitesmoke;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+.information1{
+    font-family: Special Elite;
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: 40px;
+    width: 90%;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.second-section-preview{
+    display: flex;
+    /*background-color: rgb(65, 44, 25);*/
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 130px;
+    margin-bottom: 100px;
+    height: 373px;
+    width: 83%;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+.preview2-pic-setting{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+.preview2{
+    width: 100%;
+}
+.preview2-info{
+    margin-left: 20px;
+}
+.information2-title{
+    font-family: Rubik Vinyl;
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 34px;
+    color: whitesmoke;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+.information2{
+    font-family: Special Elite;
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: 30px;
+    width: 90%;
+    animation: full-scale-logo-animation 0.8s ease-in-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Top Products Setting */
+.title-top-products{
+    text-align: center;
+    font-size: 36px;
+    color: whitesmoke;
+}
+.top-products{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.info-setting{
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.tops{
+    border: solid rgb(180, 124, 72) 2px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+.top-info{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.price{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+}
+.product-pics{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+
+

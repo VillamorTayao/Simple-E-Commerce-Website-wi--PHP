@@ -1,0 +1,371 @@
+a{text-decoration: none;}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    height: 120px;
+    border-bottom: solid #dedede 1px;
+}
+
+.header-logo-pic{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 80px;
+    width: 100px;
+}
+.logo-pic{
+    height: 100%;
+    width: 100%;
+    animation: logo-pic-animation 1s ease-in;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+@keyframes logo-pic-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.home-products-about-contact-btn{
+    background-color: black;
+    color: rgb(110, 110, 110);
+    margin-right: 10px;
+    transition: color 0.5s, text-decoration 0.5s, background-color 0.5s;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 10px;
+    font-weight: 700;
+    border: none;
+    animation: home-products-about-contact-btn-animation 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transform: scale(0);
+}
+@keyframes home-products-about-contact-btn-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.home-products-about-contact-btn:hover{
+    background-color: rgb(180, 124, 72);
+    color: white;
+}
+.fb-btn{
+    font-style: Klavika;
+    font-weight: 850;
+    background-color: black;
+    color: rgb(110, 110, 110);
+    padding: 10px 10px;
+    margin-right: 10px;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+    border: none;
+    animation: fb-btn-animation 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transform: scale(0);
+}
+.fb-btn:hover{
+    color: white;
+    background-color: #385898;
+    margin-right: 10px;
+}
+@keyframes fb-btn-animation{
+    0%{
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity:0.5
+    }
+    100%{
+        opacity: 0.7;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    margin: 40px 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    max-height: 500px;
+    max-width: 100%;
+}
+.google{
+    animation: google-section-animation 0.8s ease-in;
+    transform: scale(0);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+@keyframes google-section-animation{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.6;
+        transform: translateX(-90%);
+    }
+    20%{
+        opacity: 0.6;
+        transform: translateX(-80%);
+    }
+    30%{
+        opacity: 0.6;
+        transform: translateX(-70%);
+    }
+    40%{
+        opacity: 0.6;
+        transform: translateX(-60%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-50%);
+    }
+    60%{
+        opacity: 0.6;
+        transform: translateX(-40%);
+    }
+    70%{
+        opacity: 0.5;
+        transform: translateX(-30%);
+        transform: scale(1.2);
+    }
+    80%{
+        opacity: 0.6;
+        transform: translateX(-20%);
+        transform: scale(1.1);
+    }
+    90%{
+        opacity: 1;
+        transform: translateX(-10%);
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.google-map span{
+    font-family: Rubik Vinyl;
+    display: block;
+    font-size: 32px;
+    color: whitesmoke;
+}
+.google-map iframe{
+    display: block;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form{
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 10px 10px;
+    animation: contact-form-animation 0.8s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transform: scale(0);
+    opacity: 0;
+}
+@keyframes contact-form-animation {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    20%{
+        transform: scale(0.2);
+        opacity: 0.2;
+    }
+    30%{
+        transform: scale(0.4);
+        opacity: 0.3;
+    }
+    40%{
+        transform: scale(0.6);
+        opacity: 0.4;
+    }
+    50%{
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    60%{
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    70%{
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    80%{
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    90%{
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+form .customer-service{
+    font-family: Rubik Vinyl;
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 52px;
+}
+form label{
+    font-family: Special Elite;
+    font-size: 28px;
+    color: whitesmoke;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+form .email-container{
+    width: 50%;
+    border-radius: 4px;
+    padding: 5px 5px;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+}
+form .complaint-box{
+    height: 100px;
+    width: 90%;
+    border-radius: 10px;
+    border: solid transparent;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form .submit-btn{
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    transition: color 0.5s, text-decoration 0.5s, background-color 0.5s;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 40%;
+}
+form .submit-btn:hover{
+    background-color: rgb(180, 124, 72);
+    color: whitesmoke;
+    animation: submit-btn-hover-animation 0.6s ease-in;
+    transition: transform 1.1s;
+    animation-fill-mode: forwards;
+    transform: scale(1);
+}
+@keyframes submit-btn-hover-animation{
+    10%{
+        transform: scale(1.1);
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    30%{
+        transform: scale(1.3);
+    }
+    40%{
+        transform: scale(1.4);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    60%{
+        transform: scale(1.4);
+    }
+    70%{
+        transform: scale(1.3);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
