@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="./assets/images/website-icon.jpg">
     <link rel="stylesheet" href="./styles/index.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="./styles/sliders.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./styles/product-section.css?v=<?php echo time(); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
@@ -20,8 +20,9 @@
             <div class="redirect-buttons">
                 <ul>
                     <li onclick="location.href='#section'">Home</li>
-                    <li onclick="location.href='#section1'">Products</li>
+                    <li onclick="location.href='#section2'">Products</li>
                     <li>Contacts</li>
+                    <li>About Us</li>
                     <li>Buy Now</li>
                 </ul>
             </div>
@@ -37,42 +38,63 @@
             </div>
         </section>
 
-        <section class="about-section" id="section1">
-            <div class="container">
-                <div class="about-section-image">
-                    <img src="./assets/images/preview1.jpg" alt="about image">
+        <section class="company-intro">
+            <div class="position">
+                <div class="preview1">
+                    <div>
+                        <img src="./assets/images/preview1.jpg" alt="preview 1">
+                    </div>
+                    <div style="flex: 1; padding-left: 50px">
+                        <p>JUST TAKE A SIP, RELAX, AND BE REFRESHED</p>
+                        <p>Here at Drip and Brew's, service is our top priority to make your experience 
+                        as excellent as always. Allowing you to be with nature itself as you sip in the fresh and hard picked 
+                        coffee grounds for an amazing taste!</p>
+                    </div>
                 </div>
-                <div class="about-section-info">
-                    <p style="font-size: 35px;">About Us?</p>
-                    <p>Established in 2020, Drip and Brew provides every customer with coffee products 
-                        that are always top notch and uncomparable to others. Always thinking of many innovative coffee product ways
-                        that will make every customer wanting for more. Trusted by many by those who have tasted our delicate coffee
-                        with such great reviews that makes this business have a strong aroma and good taste impact of an actual best coffee
-                        which is Drip and Brew's Coffees.
-                    </p>
+                <div class="preview2">
+                    <div>
+                        <img src="./assets/images/preview2.jpg" alt="preview 1">
+                    </div>
+                    <div>
+                        <p>BE WITH NATURE WITH OUR COFFEE!</p>
+                        <p>All of our coffee products are made with pure, straight from the garden, coffee beans
+                        that is made into unique but delicate coffee products with many variety of flavors for thirsty mouths
+                        wanting for a good exceptional coffee.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="products-section">
+        <section class="products-section" id="section2">
             <div>
                 <p class="title">Here are the selection of our products!</p>
             </div>
 
-            <div class="products-section" id="section2">
-                <div class="product-selection">
+            <div class="products">
+                <div class="select-product-show">
                     <div class="select-option">
-                        <button>Coffee</button>
-                        <button>Syrups</button>
-                        <button>Other types</button>
+                        <button id="coffee">Coffee</button>
+                        <button id="syrups">Syrups</button>
+                        <button id="others">Other types</button>
                     </div>
                     <div class="show-products">
-                        <img src="./assets/images/coffee-product/product1.jpg" alt="product 1">
-                        <img src="./assets/images/coffee-product/product2.jpg" alt="product 2">
+                        <div style="margin-right: 30px;">
+                            <img src="./assets/coffee-product/coffees/product1.jpg" alt="product 1">
+                            <p>Classic Drip and Brew (Ungrounded)</p>
+                            <p>&#8369; 100</p>
+                            <button>Buy now</button>
+                        </div>
+                        <div>
+                            <img src="./assets/coffee-product/coffees/product2.jpg" alt="product 2">
+                            <p>Classic Drip and Brew (Grounded)</p>
+                            <p>&#8369; 120</p>
+                            <button>Buy now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

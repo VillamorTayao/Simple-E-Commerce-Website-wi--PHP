@@ -1,0 +1,44 @@
+main .products-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+main .products-section .title{
+    font-size: 32px;
+}
+
+main .products{
+    flex-direction: column;
+}
+
+main .products-section .products .select-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .products-section .products .select-option button{
+    padding: 8px 12px;
+    color: white;
+    background-color: brown;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+main .products-section .show-products{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    object-fit: contain;
+}
+
+main .products-section .show-products img{
+    height: 350px;
+}
+
