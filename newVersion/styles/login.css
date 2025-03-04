@@ -74,100 +74,53 @@ header .positioning .redirect-buttons ul li{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-/* MAIN STYLE STARTS HERE */
+/* -------------------------------------------------------------------- */
 
 main{
     padding-top: 130px;
 }
 
-main .company-background-image{
+main section{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    max-width: 100%;
+    margin-top: 100px;
 }
 
-main .company-background-image img{
-    width: 80%;
-    height: 750px;
+main section form{
+    padding: 20px;
+    border: solid thin;
+    border-color: var(--color-text);
+    width: 400px;
 }
 
-main .company-background-image .redirect-icon{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 52%;
-    left: 62.2%;
-    z-index: 50;
-    box-sizing: border-box;
-}
-
-main .company-background-image .redirect-icon img{
-    height: 60px;
-    margin-right: 12px;
-    transition: scale 0.2s;
-}
-
-main .company-background-image .redirect-icon img:hover{
-    scale: 1.3;
-}
-
-
-
-
-
-
-
-
-main .company-intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main section form input[type="text"],
+                       [type="password"]{
+    padding: 10px 15px;
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+main section form .password-setup{
+    margin-top: 15px;
     position: relative;
-    margin-top: 150px;
 }
 
-main .company-intro .position{
-    width: 80%;
-    max-width: 100%;
+main section form .password-setup img{
+    position: absolute;
+    height: 25px;
+    top: 42.5%;
+    right: 1.2%;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
 }
 
-main .company-intro .preview1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    object-fit: contain;
+main section form .password-setup img:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
 }
-
-main .company-intro .preview1 img{
-    height: 500px;
-}
-
-main .company-intro .preview2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    object-fit: contain;
-}
-
-main .company-intro .preview2 img{
-    height: 500px;
-}
-
 
 
 

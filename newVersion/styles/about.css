@@ -1,5 +1,11 @@
 :root{ 
     scroll-behavior: smooth;
+    --color-text: rgb(180, 124, 72);
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 body{
@@ -26,7 +32,7 @@ header{
     border-left: none;
     border-right: none;
     border-bottom-width: thin;
-    border-color: rgb(150, 121, 105);
+    border-color: var(--color-text);
     z-index: 100;
 
     position: fixed;
@@ -68,6 +74,22 @@ header .positioning .redirect-buttons ul li{
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+main{
+    padding-top: 30px;
+}
+
+
+
+
+
+
 main .about-section{
     display: flex;
     justify-content: center;
@@ -100,4 +122,90 @@ main .about-section .about-section-info{
     font-size: 24px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+
+
+
+
+
+main .certificate-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+main .certificate-section .positioning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 100%;
+    font-size: 32px;
+}
+
+main .certificate-section .certificate-image{
+    text-align: center;
+}
+
+main .certificate-section .certificate-image span{
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+main .certificate-section .certificate-image img{
+    height: 100%;
+    object-fit: contain;
+    transition: scale 0.3s;
+}
+
+main .certificate-section .certificate-image img:hover{
+    scale: 1.02;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .reviews-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+main .reviews-section .positioning{
+    text-align: center;
+    width: 70%;
+    max-width: 100%;
+}
+
+main .reviews-section .positioning div{
+    border: solid;
+    border-color: var(--color-text);
+    border-width: 0.2;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 100%;
 }

@@ -50,3 +50,4 @@ document.getElementById('others').addEventListener('click', () => {
         </div>
     `;
 })
+
