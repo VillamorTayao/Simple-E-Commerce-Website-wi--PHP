@@ -12,14 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-    <title>Drip and Brew | Home</title>
+    <title>Drip and Brew | Login</title>
 </head>
 <body style="margin: 0;" id="section">
 
     <header id="section">
         <div class="positioning">
             <div class="logo-position">
-                <img src="./assets/images/logo.jpg" alt="logo pic">
+            <a href="index.php"><img src="./assets/images/logo.jpg" alt="logo pic"></a>
             </div>
             <div class="redirect-buttons">
                 <ul>
@@ -52,14 +52,14 @@
                 
                 <hr style="margin-top: 20px; border-color: B7B7B7;">
                 <div class="signup-position">
-                    Don't have an account?<a href="index.php" style="font-size: 16px;">Sign Up</a>
+                    <span>Don't have an account? </span><a href="signup.php" style="font-size: 16px;"><u>Sign Up</u></a>
                 </div>
 
                 <div class="other-options">
                     <h4>--OR--</h4>
                     <div class="options">
-                        <img src="assets/google-svgrepo-com.svg" alt="google">
-                        <img src="assets/facebook-svgrepo-com.svg" alt="facebook" style="margin-right: 0;">
+                        <img src="assets/icons/google-svgrepo-com.svg" alt="google">
+                        <img src="assets/icons/facebook-svgrepo-com.svg" alt="facebook" style="margin-right: 0;">
                     </div>
                 </div>
             </form>

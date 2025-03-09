@@ -1,0 +1,74 @@
+:root{ 
+    scroll-behavior: smooth;
+    --color-text: rgb(180, 124, 72);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    position: relative;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    padding-bottom: 300px;
+}
+
+header{
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: thin;
+    border-color: var(--color-text);
+
+    position: fixed;
+    z-index: 100;
+}
+
+header .positioning{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    object-fit: contain;
+    width: 80%;
+}
+
+header .positioning img{
+    height: 80px;
+    width: 100%;
+    max-width: 100%;
+}
+
+header .positioning .redirect-buttons{
+    max-width: 100%;
+}
+
+header .positioning .redirect-buttons ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header .positioning .redirect-buttons ul li{
+    list-style-type: none;
+    padding-right: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}

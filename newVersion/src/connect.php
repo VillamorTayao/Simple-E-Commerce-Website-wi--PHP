@@ -2,7 +2,7 @@
     $db_server = "localhost";
     $db_user = "root";
     $db_password = "";
-    $db_name = "landingPage";
+    $db_name = "landingpage";
 
     $connect = mysqli_connect($db_server, $db_user, $db_password, $db_name);
 

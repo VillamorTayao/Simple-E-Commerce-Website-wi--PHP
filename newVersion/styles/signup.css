@@ -74,89 +74,55 @@ header .positioning .redirect-buttons ul li{
     cursor: pointer;
 }
 
-/* -------------------------------------------------------------------- */
+/* ----------------------------------------------- */
 
 main{
-    padding-top: 130px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    overflow: hidden;
 }
 
-main section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-main section form{
-    padding: 20px;
+main form{
+    padding: 30px;
+    background: transparent;
     border: solid thin;
     border-color: var(--color-text);
-    width: 400px;
 }
 
-main section form input[type="text"],
-                       [type="password"]{
-    padding: 8px 15px;
+main form input{
     width: 100%;
     max-width: 100%;
+    padding: 8px 12px;
     box-sizing: border-box;
+    outline: none;
     margin-top: 5px;
+    margin-bottom: 15px;
+    border: solid thin;
     font-size: 16px;
 }
 
-main section form .password-setup{
-    margin-top: 15px;
-    position: relative;
+main form input:focus{
+    border-color: var(--color-text);
 }
 
-main section form .password-setup img{
-    position: absolute;
-    height: 25.5px;
-    top: 42.5%;
-    right: 0.5%;
+main form input[type="submit"]{
     cursor: pointer;
-    padding: 5px;
-}
-
-main section form .password-setup img:hover {
-    background-color: rgba(0, 0, 0, 0.1); 
-}
-
-main section form input[type="submit"]{
-    margin-top: 18px;
-    padding: 10px 35px;
-    border-radius: 5px;
-    border: none;
+    width: 120px;
+    padding: 15px 15px;
     background-color: var(--color-text);
     color: white;
-    cursor: pointer;
-    transition: scale 0.2s;
+    border: none;
+    transition: scale 0.3s ease-in, opacity 0.3s;
 }
-main section form input[type="submit"]:hover{
+
+input[type="submit"]:hover{
     scale: 1.05;
 }
 
-main section form .signup-position{
-    text-align: center;
+input[type="submit"]:focus{
+    opacity: 0.5;
 }
-
-main section form .other-options{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-main section form .other-options img{
-    height: 45px;
-    box-sizing: border-box;
-    margin-right: 15px;
-    transition: scale 0.2s;
-    cursor: pointer;
-}
-main section form .other-options img:hover{
-    scale: 1.3;
-}
-
-
 

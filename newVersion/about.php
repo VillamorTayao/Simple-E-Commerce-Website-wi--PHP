@@ -14,7 +14,7 @@
     <header id="section">
         <div class="positioning">
             <div class="logo-position">
-                <img src="./assets/images/logo.jpg" alt="logo pic">
+            <a href="index.php"><img src="./assets/images/logo.jpg" alt="logo pic"></a>
             </div>
             <div class="redirect-buttons">
                 <ul>
